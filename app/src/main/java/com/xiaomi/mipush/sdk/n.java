@@ -1,0 +1,19 @@
+package com.xiaomi.mipush.sdk;
+
+import android.text.TextUtils;
+
+/* loaded from: classes2.dex */
+class n {
+    public int a = 0;
+
+    /* renamed from: a, reason: collision with other field name */
+    public String f5533a = "";
+
+    public boolean equals(Object obj) {
+        if (obj == null || !(obj instanceof n)) {
+            return false;
+        }
+        n nVar = (n) obj;
+        return !TextUtils.isEmpty(nVar.f5533a) && nVar.f5533a.equals(this.f5533a);
+    }
+}

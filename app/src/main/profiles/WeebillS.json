@@ -1,0 +1,18 @@
+{
+    "battery":2,
+    "ccs": 1,
+    "update": 1,
+    "motionControl": 1,
+    "photo": 1,
+    "video": 1,
+    "digitalZoom": 0,
+    "moveline": 0,
+    "jsonData": 0,
+    "links": 4,
+    "carry": 0,
+	"ble_hid": 0,
+	"tracking": 1,
+	"autotune": 1,
+	"resetPosition": 1,
+	"gimbalMode": [0,1,2,3,4,5]
+}

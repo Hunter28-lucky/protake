@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/no_signal"
+        android:tag="layout/layout_monitor_texture_group_0"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.05"/>
+    <com.blink.academy.film.stream.ACUnitView
+        android:id="@+id/texture_ac"
+        android:tag="layout/layout_monitor_texture_group_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <View
+        android:id="@+id/player_cloud_bg_cover"
+        android:tag="layout/layout_monitor_texture_group_2"
+        android:background="@color/colorTransmitDiaBg"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.blink.academy.film.widgets.GuideView
+        android:id="@+id/home_guide"
+        android:tag="layout/layout_monitor_texture_group_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</merge>

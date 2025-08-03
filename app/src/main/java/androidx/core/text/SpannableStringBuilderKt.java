@@ -1,0 +1,139 @@
+package androidx.core.text;
+
+import android.text.SpannableStringBuilder;
+import android.text.SpannedString;
+import android.text.style.BackgroundColorSpan;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.RelativeSizeSpan;
+import android.text.style.StrikethroughSpan;
+import android.text.style.StyleSpan;
+import android.text.style.SubscriptSpan;
+import android.text.style.SuperscriptSpan;
+import android.text.style.UnderlineSpan;
+import androidx.annotation.ColorInt;
+import defpackage.C3921;
+import defpackage.InterfaceC2392;
+import defpackage.i4;
+
+/* compiled from: SpannableStringBuilder.kt */
+/* loaded from: classes.dex */
+public final class SpannableStringBuilderKt {
+    public static final SpannableStringBuilder backgroundColor(SpannableStringBuilder spannableStringBuilder, @ColorInt int i, InterfaceC2392<? super SpannableStringBuilder, i4> interfaceC2392) {
+        C3921.m12666(spannableStringBuilder, "<this>");
+        C3921.m12666(interfaceC2392, "builderAction");
+        BackgroundColorSpan backgroundColorSpan = new BackgroundColorSpan(i);
+        int length = spannableStringBuilder.length();
+        interfaceC2392.invoke(spannableStringBuilder);
+        spannableStringBuilder.setSpan(backgroundColorSpan, length, spannableStringBuilder.length(), 17);
+        return spannableStringBuilder;
+    }
+
+    public static final SpannableStringBuilder bold(SpannableStringBuilder spannableStringBuilder, InterfaceC2392<? super SpannableStringBuilder, i4> interfaceC2392) {
+        C3921.m12666(spannableStringBuilder, "<this>");
+        C3921.m12666(interfaceC2392, "builderAction");
+        StyleSpan styleSpan = new StyleSpan(1);
+        int length = spannableStringBuilder.length();
+        interfaceC2392.invoke(spannableStringBuilder);
+        spannableStringBuilder.setSpan(styleSpan, length, spannableStringBuilder.length(), 17);
+        return spannableStringBuilder;
+    }
+
+    public static final SpannedString buildSpannedString(InterfaceC2392<? super SpannableStringBuilder, i4> interfaceC2392) {
+        C3921.m12666(interfaceC2392, "builderAction");
+        SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();
+        interfaceC2392.invoke(spannableStringBuilder);
+        return new SpannedString(spannableStringBuilder);
+    }
+
+    public static final SpannableStringBuilder color(SpannableStringBuilder spannableStringBuilder, @ColorInt int i, InterfaceC2392<? super SpannableStringBuilder, i4> interfaceC2392) {
+        C3921.m12666(spannableStringBuilder, "<this>");
+        C3921.m12666(interfaceC2392, "builderAction");
+        ForegroundColorSpan foregroundColorSpan = new ForegroundColorSpan(i);
+        int length = spannableStringBuilder.length();
+        interfaceC2392.invoke(spannableStringBuilder);
+        spannableStringBuilder.setSpan(foregroundColorSpan, length, spannableStringBuilder.length(), 17);
+        return spannableStringBuilder;
+    }
+
+    public static final SpannableStringBuilder inSpans(SpannableStringBuilder spannableStringBuilder, Object[] objArr, InterfaceC2392<? super SpannableStringBuilder, i4> interfaceC2392) {
+        C3921.m12666(spannableStringBuilder, "<this>");
+        C3921.m12666(objArr, "spans");
+        C3921.m12666(interfaceC2392, "builderAction");
+        int length = spannableStringBuilder.length();
+        interfaceC2392.invoke(spannableStringBuilder);
+        for (Object obj : objArr) {
+            spannableStringBuilder.setSpan(obj, length, spannableStringBuilder.length(), 17);
+        }
+        return spannableStringBuilder;
+    }
+
+    public static final SpannableStringBuilder italic(SpannableStringBuilder spannableStringBuilder, InterfaceC2392<? super SpannableStringBuilder, i4> interfaceC2392) {
+        C3921.m12666(spannableStringBuilder, "<this>");
+        C3921.m12666(interfaceC2392, "builderAction");
+        StyleSpan styleSpan = new StyleSpan(2);
+        int length = spannableStringBuilder.length();
+        interfaceC2392.invoke(spannableStringBuilder);
+        spannableStringBuilder.setSpan(styleSpan, length, spannableStringBuilder.length(), 17);
+        return spannableStringBuilder;
+    }
+
+    public static final SpannableStringBuilder scale(SpannableStringBuilder spannableStringBuilder, float f, InterfaceC2392<? super SpannableStringBuilder, i4> interfaceC2392) {
+        C3921.m12666(spannableStringBuilder, "<this>");
+        C3921.m12666(interfaceC2392, "builderAction");
+        RelativeSizeSpan relativeSizeSpan = new RelativeSizeSpan(f);
+        int length = spannableStringBuilder.length();
+        interfaceC2392.invoke(spannableStringBuilder);
+        spannableStringBuilder.setSpan(relativeSizeSpan, length, spannableStringBuilder.length(), 17);
+        return spannableStringBuilder;
+    }
+
+    public static final SpannableStringBuilder strikeThrough(SpannableStringBuilder spannableStringBuilder, InterfaceC2392<? super SpannableStringBuilder, i4> interfaceC2392) {
+        C3921.m12666(spannableStringBuilder, "<this>");
+        C3921.m12666(interfaceC2392, "builderAction");
+        StrikethroughSpan strikethroughSpan = new StrikethroughSpan();
+        int length = spannableStringBuilder.length();
+        interfaceC2392.invoke(spannableStringBuilder);
+        spannableStringBuilder.setSpan(strikethroughSpan, length, spannableStringBuilder.length(), 17);
+        return spannableStringBuilder;
+    }
+
+    public static final SpannableStringBuilder subscript(SpannableStringBuilder spannableStringBuilder, InterfaceC2392<? super SpannableStringBuilder, i4> interfaceC2392) {
+        C3921.m12666(spannableStringBuilder, "<this>");
+        C3921.m12666(interfaceC2392, "builderAction");
+        SubscriptSpan subscriptSpan = new SubscriptSpan();
+        int length = spannableStringBuilder.length();
+        interfaceC2392.invoke(spannableStringBuilder);
+        spannableStringBuilder.setSpan(subscriptSpan, length, spannableStringBuilder.length(), 17);
+        return spannableStringBuilder;
+    }
+
+    public static final SpannableStringBuilder superscript(SpannableStringBuilder spannableStringBuilder, InterfaceC2392<? super SpannableStringBuilder, i4> interfaceC2392) {
+        C3921.m12666(spannableStringBuilder, "<this>");
+        C3921.m12666(interfaceC2392, "builderAction");
+        SuperscriptSpan superscriptSpan = new SuperscriptSpan();
+        int length = spannableStringBuilder.length();
+        interfaceC2392.invoke(spannableStringBuilder);
+        spannableStringBuilder.setSpan(superscriptSpan, length, spannableStringBuilder.length(), 17);
+        return spannableStringBuilder;
+    }
+
+    public static final SpannableStringBuilder underline(SpannableStringBuilder spannableStringBuilder, InterfaceC2392<? super SpannableStringBuilder, i4> interfaceC2392) {
+        C3921.m12666(spannableStringBuilder, "<this>");
+        C3921.m12666(interfaceC2392, "builderAction");
+        UnderlineSpan underlineSpan = new UnderlineSpan();
+        int length = spannableStringBuilder.length();
+        interfaceC2392.invoke(spannableStringBuilder);
+        spannableStringBuilder.setSpan(underlineSpan, length, spannableStringBuilder.length(), 17);
+        return spannableStringBuilder;
+    }
+
+    public static final SpannableStringBuilder inSpans(SpannableStringBuilder spannableStringBuilder, Object obj, InterfaceC2392<? super SpannableStringBuilder, i4> interfaceC2392) {
+        C3921.m12666(spannableStringBuilder, "<this>");
+        C3921.m12666(obj, "span");
+        C3921.m12666(interfaceC2392, "builderAction");
+        int length = spannableStringBuilder.length();
+        interfaceC2392.invoke(spannableStringBuilder);
+        spannableStringBuilder.setSpan(obj, length, spannableStringBuilder.length(), 17);
+        return spannableStringBuilder;
+    }
+}

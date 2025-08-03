@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:gravity="center"
+        android:id="@+id/normal_text"
+        android:layout_width="44dp"
+        android:layout_height="64dp"
+        android:text="预览 fps "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fps_select_rv"
+        android:layout_width="300dp"
+        android:layout_height="64dp"
+        app:layout_constraintLeft_toRightOf="@+id/normal_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/normal_video_text"
+        android:layout_width="44dp"
+        android:layout_height="64dp"
+        android:text="视频 fps "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/normal_text"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/video_fps_select_rv"
+        android:layout_width="300dp"
+        android:layout_height="64dp"
+        app:layout_constraintLeft_toRightOf="@+id/normal_video_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/normal_video_text"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/time_lapse_tv"
+        android:visibility="gone"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:text="延时摄影"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/normal_video_text"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/time_lapse_rv"
+        android:layout_width="300dp"
+        android:layout_height="64dp"
+        app:layout_constraintLeft_toRightOf="@+id/time_lapse_tv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/time_lapse_tv"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

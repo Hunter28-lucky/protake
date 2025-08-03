@@ -1,0 +1,38 @@
+package org.jcodec.scale.highbd;
+
+import org.jcodec.common.model.PictureHiBD;
+
+/* loaded from: classes2.dex */
+public class Yuv444jToYuv420pHiBD implements TransformHiBD {
+    public static int Y_COEFF = 7168;
+
+    private void copyAvg(int[] iArr, int[] iArr2, int i, int i2) {
+        int i3 = 0;
+        int i4 = 0;
+        for (int i5 = 0; i5 < (i2 >> 1); i5++) {
+            int i6 = 0;
+            while (i6 < i) {
+                int i7 = iArr[i3] - 128;
+                int i8 = Y_COEFF;
+                int i9 = i3 + i;
+                int i10 = (((iArr[i9] - 128) * i8) >> 13) + 128;
+                iArr2[i4] = (((((((i7 * i8) >> 13) + 128) + ((((iArr[i3 + 1] - 128) * i8) >> 13) + 128)) + i10) + ((((iArr[i9 + 1] - 128) * i8) >> 13) + 128)) + 2) >> 2;
+                i6 += 2;
+                i4++;
+                i3 += 2;
+            }
+            i3 += i;
+        }
+    }
+
+    @Override // org.jcodec.scale.highbd.TransformHiBD
+    public void transform(PictureHiBD pictureHiBD, PictureHiBD pictureHiBD2) {
+        int[] planeData = pictureHiBD.getPlaneData(0);
+        int[] planeData2 = pictureHiBD2.getPlaneData(0);
+        for (int i = 0; i < pictureHiBD.getPlaneWidth(0) * pictureHiBD.getPlaneHeight(0); i++) {
+            planeData2[i] = ((planeData[i] * Y_COEFF) >> 13) + 16;
+        }
+        copyAvg(pictureHiBD.getPlaneData(1), pictureHiBD2.getPlaneData(1), pictureHiBD.getPlaneWidth(1), pictureHiBD.getPlaneHeight(1));
+        copyAvg(pictureHiBD.getPlaneData(2), pictureHiBD2.getPlaneData(2), pictureHiBD.getPlaneWidth(2), pictureHiBD.getPlaneHeight(2));
+    }
+}

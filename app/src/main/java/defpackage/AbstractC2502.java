@@ -1,0 +1,56 @@
+package defpackage;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.RelativeLayout;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.databinding.DataBindingUtil;
+import androidx.databinding.ViewDataBinding;
+import com.blink.academy.film.widgets.BottomBlockView;
+import com.blink.academy.film.widgets.StrokeTextView;
+import com.blink.academy.protake.R;
+
+/* compiled from: LayoutGridsItemBinding.java */
+/* renamed from: ǻ, reason: contains not printable characters */
+/* loaded from: classes.dex */
+public abstract class AbstractC2502 extends ViewDataBinding {
+
+    /* renamed from: ԫ, reason: contains not printable characters */
+    @NonNull
+    public final BottomBlockView f9276;
+
+    /* renamed from: Ԭ, reason: contains not printable characters */
+    @NonNull
+    public final RelativeLayout f9277;
+
+    /* renamed from: ԭ, reason: contains not printable characters */
+    @NonNull
+    public final StrokeTextView f9278;
+
+    /* renamed from: Ԯ, reason: contains not printable characters */
+    @NonNull
+    public final StrokeTextView f9279;
+
+    public AbstractC2502(Object obj, View view, int i, BottomBlockView bottomBlockView, RelativeLayout relativeLayout, StrokeTextView strokeTextView, StrokeTextView strokeTextView2) {
+        super(obj, view, i);
+        this.f9276 = bottomBlockView;
+        this.f9277 = relativeLayout;
+        this.f9278 = strokeTextView;
+        this.f9279 = strokeTextView2;
+    }
+
+    @NonNull
+    /* renamed from: ຉ, reason: contains not printable characters */
+    public static AbstractC2502 m9221(@NonNull LayoutInflater layoutInflater, @Nullable ViewGroup viewGroup, boolean z) {
+        return m9222(layoutInflater, viewGroup, z, DataBindingUtil.getDefaultComponent());
+    }
+
+    @NonNull
+    @Deprecated
+    /* renamed from: ຑ, reason: contains not printable characters */
+    public static AbstractC2502 m9222(@NonNull LayoutInflater layoutInflater, @Nullable ViewGroup viewGroup, boolean z, @Nullable Object obj) {
+        return (AbstractC2502) ViewDataBinding.inflateInternal(layoutInflater, R.layout.layout_grids_item, viewGroup, z, obj);
+    }
+}
