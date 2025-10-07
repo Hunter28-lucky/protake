@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:id="@+id/update_root"
+    android:tag="layout/layout_style_update_0"
+    android:background="@drawable/shap_bg_gold_download"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_12_download"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:id="@+id/tv_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/LOOKS_UPDATE_AVAILABLE"
+        android:layout_toRightOf="@+id/iv_download"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

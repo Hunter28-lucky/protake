@@ -1,0 +1,1005 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.blink.academy.protake"
+4    platformBuildVersionCode="34"
+5    platformBuildVersionName="14"
+6    android:compileSdkVersion="34"
+7    android:compileSdkVersionCodename="14"
+8    android:versionCode="130"
+9    android:versionName="3.0.17" >
+10
+11    <uses-sdk
+11-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:10:5-12:40
+12        android:minSdkVersion="23"
+12-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:11:9-35
+13        android:targetSdkVersion="28" />
+13-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:12:9-38
+14
+15    <queries>
+15-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:13:5-25:15
+16        <package android:name="com.tencent.mm" />
+16-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:14:9-49
+16-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:14:18-47
+17
+18        <intent>
+18-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:15:9-18:18
+19            <action android:name="*" />
+19-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:16:13-39
+19-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:16:21-37
+20
+21            <data android:scheme="tbopen" />
+21-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:17:13-44
+21-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:17:19-42
+22        </intent>
+23
+24        <package android:name="com.eg.android.AlipayGphone" />
+24-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:19:9-62
+24-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:19:18-60
+25        <package android:name="com.eg.android.AlipayGphoneRC" />
+25-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:20:9-64
+25-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:20:18-62
+26        <package android:name="hk.alipay.wallet" />
+26-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:21:9-51
+26-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:21:18-49
+27
+28        <intent>
+28-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:22:9-24:18
+29            <action android:name="com.android.vending.billing.InAppBillingService.BIND" />
+29-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:23:13-90
+29-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:23:21-88
+30        </intent>
+31    </queries>
+32    <queries>
+32-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:13:5-25:15
+33        <package android:name="com.eg.android.AlipayGphone" />
+33-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:19:9-62
+33-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:19:18-60
+34        <package android:name="hk.alipay.wallet" />
+34-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:21:9-51
+34-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:21:18-49
+35    </queries>
+36
+37    <uses-permission android:name="android.permission.INTERNET" />
+37-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:30:5-66
+37-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:30:22-64
+38    <uses-permission android:name="android.permission.CAMERA" />
+38-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:31:5-64
+38-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:31:22-62
+39    <uses-permission
+39-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:32:5-34:37
+40        android:name="android.permission.READ_EXTERNAL_STORAGE"
+40-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:33:9-64
+41        android:maxSdkVersion="32" />
+41-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:34:9-35
+42    <uses-permission
+42-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:35:5-37:37
+43        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+43-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:36:9-65
+44        android:maxSdkVersion="32" />
+44-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:37:9-35
+45    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+45-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:38:5-75
+45-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:38:22-73
+46    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+46-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:39:5-74
+46-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:39:22-72
+47    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+47-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:40:5-89
+47-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:40:22-87
+48    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+48-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:41:5-70
+48-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:41:22-68
+49    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+49-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:42:5-79
+49-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:42:22-77
+50    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+50-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:43:5-76
+50-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:43:22-74
+51    <uses-permission
+51-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:44:5-46:37
+52        android:name="android.permission.BLUETOOTH"
+52-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:45:9-52
+53        android:maxSdkVersion="30" />
+53-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:46:9-35
+54    <uses-permission
+54-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:47:5-49:37
+55        android:name="android.permission.BLUETOOTH_ADMIN"
+55-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:48:9-58
+56        android:maxSdkVersion="30" />
+56-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:49:9-35
+57    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+57-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:50:5-78
+57-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:50:22-76
+58    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+58-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:51:5-80
+58-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:51:22-78
+59    <uses-permission android:name="android.permission.VIBRATE" />
+59-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:52:5-65
+59-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:52:22-63
+60    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+60-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:53:5-75
+60-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:53:22-73
+61    <uses-permission android:name="android.permission.WAKE_LOCK" />
+61-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:54:5-67
+61-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:54:22-65
+62    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+62-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:55:5-78
+62-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:55:22-76
+63    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+63-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:56:5-75
+63-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:56:22-73
+64    <uses-permission android:name="com.android.vending.BILLING" />
+64-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:57:5-66
+64-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:57:22-64
+65    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+65-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:58:5-72
+65-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:58:22-70
+66    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+66-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:59:5-77
+66-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:59:22-75
+67    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+67-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:60:5-75
+67-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:60:22-73
+68
+69    <uses-feature android:name="android.hardware.camera" />
+69-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:61:5-59
+69-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:61:19-57
+70    <uses-feature android:name="android.hardware.camera.autofocus" />
+70-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:62:5-69
+70-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:62:19-67
+71    <uses-feature android:name="android.hardware.camera.front" />
+71-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:63:5-65
+71-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:63:19-63
+72    <uses-feature
+72-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:64:5-66:35
+73        android:name="android.hardware.microphone"
+73-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:65:9-51
+74        android:required="false" />
+74-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:66:9-33
+75    <uses-feature
+75-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:67:5-69:35
+76        android:name="android.hardware.usb.host"
+76-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:68:9-49
+77        android:required="false" />
+77-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:69:9-33
+78    <uses-feature
+78-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:70:5-72:34
+79        android:name="android.hardware.usb.accessory"
+79-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:71:9-54
+80        android:required="true" />
+80-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:72:9-32
+81
+82    <meta-data
+82-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:73:5-75:31
+83        android:name="android.notch_support"
+83-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:74:9-45
+84        android:value="true" />
+84-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:75:9-29
+85
+86    <uses-feature android:glEsVersion="0x30000" />
+86-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:76:5-50
+86-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:76:19-48
+87
+88    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+88-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:77:5-87
+88-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:77:29-85
+89    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
+89-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:78:5-85
+89-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:78:29-83
+90
+91    <supports-screens
+91-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:79:5-84:36
+92        android:anyDensity="true"
+92-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:80:9-34
+93        android:largeScreens="true"
+93-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:83:9-36
+94        android:normalScreens="true"
+94-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:82:9-37
+95        android:resizeable="true"
+95-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:84:9-34
+96        android:smallScreens="true" />
+96-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:81:9-36
+97
+98    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+98-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:85:5-76
+98-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:85:22-74
+99
+100    <permission
+100-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:86:5-88:46
+101        android:name="com.blink.academy.protake.permission.MIPUSH_RECEIVE"
+101-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:87:9-75
+102        android:protectionLevel="signature" />
+102-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:88:9-44
+103
+104    <uses-permission android:name="com.blink.academy.protake.permission.MIPUSH_RECEIVE" />
+104-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:89:5-90
+104-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:89:22-88
+105    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" />
+105-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:90:5-85
+105-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:90:22-83
+106    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+106-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:455:5-90
+106-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:455:22-88
+107    <uses-permission android:name="android.permission.READ_APP_BADGE" />
+107-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:456:5-72
+107-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:456:22-70
+108    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+108-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:457:5-91
+108-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:457:22-89
+109    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+109-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:458:5-87
+109-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:458:22-85
+110    <uses-permission android:name="com.sonyericsson.home.action.UPDATE_BADGE" />
+110-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:459:5-80
+110-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:459:22-78
+111    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+111-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:460:5-85
+111-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:460:22-83
+112    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+112-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:461:5-86
+112-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:461:22-84
+113    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+113-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:462:5-80
+113-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:462:22-78
+114    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+114-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:463:5-82
+114-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:463:22-80
+115    <uses-permission android:name="com.blink.academy.protake.permission.MIPUSH_RECEIVE" />
+115-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:89:5-90
+115-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:89:22-88
+116
+117    <permission
+117-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:86:5-88:46
+118        android:name="com.blink.academy.protake.permission.MIPUSH_RECEIVE"
+118-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:87:9-75
+119        android:protectionLevel="signature" />
+119-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:88:9-44
+120
+121    <application
+121-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:91:5-454:19
+122        android:name="com.blink.academy.film.FilmApp"
+122-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:95:9-54
+123        android:allowBackup="false"
+123-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:96:9-36
+124        android:debuggable="true"
+125        android:extractNativeLibs="false"
+126        android:icon="@mipmap/ic_launcher"
+126-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:94:9-43
+127        android:label="@string/GLOBAL_APP_NAME"
+127-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:93:9-48
+128        android:largeHeap="true"
+128-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:97:9-33
+129        android:maxAspectRatio="2.4"
+129-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:101:9-37
+130        android:resizeableActivity="true"
+130-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:99:9-42
+131        android:roundIcon="@mipmap/ic_launcher_round"
+131-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:100:9-54
+132        android:supportsRtl="true"
+132-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:98:9-35
+133        android:theme="@style/AppTheme" >
+133-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:92:9-40
+134        <meta-data
+134-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:102:9-104:55
+135            android:name="UMENG_APPKEY"
+135-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:103:13-40
+136            android:value="5e4102ca19ce475332c98817" />
+136-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:104:13-53
+137        <meta-data
+137-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:105:9-107:34
+138            android:name="android.max_aspect"
+138-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:106:13-46
+139            android:value="2.4" />
+139-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:107:13-32
+140        <meta-data
+140-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:108:9-110:32
+141            android:name="android.min_aspect"
+141-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:109:13-46
+142            android:value="1" />
+142-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:110:13-30
+143        <meta-data
+143-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:102:9-104:55
+144            android:name="UMENG_APPKEY"
+144-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:103:13-40
+145            android:value="5e4102ca19ce475332c98817" />
+145-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:104:13-53
+146
+147        <activity
+147-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:114:9-121:66
+148            android:name="com.blink.academy.film.player.PlayerActivity"
+148-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:116:13-72
+149            android:configChanges="screenSize|orientation|keyboardHidden"
+149-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:120:13-74
+150            android:exported="false"
+150-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:117:13-37
+151            android:launchMode="singleTask"
+151-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:118:13-44
+152            android:screenOrientation="landscape"
+152-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:119:13-50
+153            android:theme="@style/Film.FullscreenAppCompatTheme"
+153-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:115:13-65
+154            android:windowSoftInputMode="adjustPan|stateHidden" />
+154-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:121:13-64
+155
+156        <uses-library
+156-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:122:9-124:39
+157            android:name="org.apache.http.legacy"
+157-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:123:13-50
+158            android:required="false" />
+158-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:124:13-37
+159
+160        <activity
+160-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:125:9-137:20
+161            android:name="com.blink.academy.film.home.HomeActivity"
+161-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:127:13-68
+162            android:configChanges="screenSize|screenLayout|keyboardHidden|keyboard"
+162-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:131:13-84
+163            android:exported="false"
+163-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:128:13-37
+164            android:launchMode="singleTask"
+164-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:129:13-44
+165            android:screenOrientation="landscape"
+165-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:130:13-50
+166            android:theme="@style/Film.FullscreenAppCompatTheme"
+166-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:126:13-65
+167            android:windowSoftInputMode="adjustPan|stateHidden" >
+167-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:132:13-64
+168            <intent-filter>
+168-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:133:13-136:29
+169                <action android:name="com.blink.academy.protake.default.MAIN" />
+169-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:134:17-80
+169-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:134:25-78
+170
+171                <category android:name="android.intent.category.DEFAULT" />
+171-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:135:17-75
+171-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:135:27-73
+172            </intent-filter>
+173        </activity>
+174        <activity
+174-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:138:9-145:66
+175            android:name="com.blink.academy.film.setting.SettingActivity"
+175-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:140:13-74
+176            android:configChanges="screenSize|orientation|keyboardHidden"
+176-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:144:13-74
+177            android:exported="false"
+177-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:141:13-37
+178            android:launchMode="singleTask"
+178-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:142:13-44
+179            android:screenOrientation="landscape"
+179-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:143:13-50
+180            android:theme="@style/Film.FullscreenAppCompatTheme"
+180-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:139:13-65
+181            android:windowSoftInputMode="adjustPan|stateHidden" />
+181-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:145:13-64
+182        <activity
+182-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:146:9-153:66
+183            android:name="com.blink.academy.film.setting.PortraitSettingActivity"
+183-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:148:13-82
+184            android:configChanges="screenSize|orientation|keyboardHidden"
+184-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:152:13-74
+185            android:exported="false"
+185-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:149:13-37
+186            android:launchMode="singleTask"
+186-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:150:13-44
+187            android:screenOrientation="portrait"
+187-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:151:13-49
+188            android:theme="@style/Film.FullscreenAppCompatTheme"
+188-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:147:13-65
+189            android:windowSoftInputMode="adjustPan|stateHidden" />
+189-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:153:13-64
+190        <activity
+190-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:154:9-163:20
+191            android:name="com.blink.academy.film.Splash2Activity"
+191-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:156:13-66
+192            android:exported="true"
+192-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:157:13-36
+193            android:screenOrientation="landscape"
+193-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:158:13-50
+194            android:theme="@style/Theme.App.Starting" >
+194-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:155:13-54
+195            <intent-filter>
+195-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:159:13-162:29
+196                <action android:name="android.intent.action.MAIN" />
+196-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:160:17-68
+196-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:160:25-66
+197
+198                <category android:name="android.intent.category.LAUNCHER" />
+198-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:161:17-76
+198-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:161:27-74
+199            </intent-filter>
+200        </activity>
+201        <activity
+201-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:164:9-170:64
+202            android:name="com.blink.academy.film.zxing.CaptureActivity"
+202-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:166:13-72
+203            android:configChanges="screenSize|keyboardHidden"
+203-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:170:13-62
+204            android:exported="false"
+204-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:167:13-37
+205            android:launchMode="singleTask"
+205-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:168:13-44
+206            android:screenOrientation="landscape"
+206-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:169:13-50
+207            android:theme="@style/Film.FullscreenAppCompatTheme" />
+207-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:165:13-65
+208        <activity
+208-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:171:9-177:87
+209            android:name="com.blink.academy.film.support.pay.wechat.WXPayCallbackActivity"
+209-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:173:13-91
+210            android:configChanges="screenSize|orientation|navigation|keyboardHidden"
+210-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:177:13-85
+211            android:exported="false"
+211-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:174:13-37
+212            android:launchMode="singleTop"
+212-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:175:13-43
+213            android:screenOrientation="portrait"
+213-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:176:13-49
+214            android:theme="@style/Film.FullscreenAppCompatTheme" />
+214-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:172:13-65
+215
+216        <activity-alias
+216-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:178:9-181:103
+217            android:name="com.blink.academy.protake.wxapi.WXPayEntryActivity"
+217-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:179:13-78
+218            android:exported="true"
+218-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:180:13-36
+219            android:targetActivity="com.blink.academy.film.support.pay.wechat.WXPayCallbackActivity" />
+219-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:181:13-101
+220
+221        <activity
+221-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:182:9-189:66
+222            android:name="com.blink.academy.film.PayAdapterActivity"
+222-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:184:13-69
+223            android:configChanges="screenSize|orientation|keyboardHidden"
+223-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:188:13-74
+224            android:exported="false"
+224-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:185:13-37
+225            android:launchMode="singleTop"
+225-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:186:13-43
+226            android:screenOrientation="portrait"
+226-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:187:13-49
+227            android:theme="@style/Film.FullscreenAppCompatTheme"
+227-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:183:13-65
+228            android:windowSoftInputMode="adjustPan|stateHidden" />
+228-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:189:13-64
+229        <activity
+229-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:190:9-194:169
+230            android:name="com.alipay.sdk.app.H5PayActivity"
+230-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:192:13-60
+231            android:configChanges="fontScale|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|locale"
+231-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:194:13-167
+232            android:exported="false"
+232-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:193:13-37
+233            android:theme="@android:style/Theme.NoTitleBar" />
+233-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:191:13-60
+234        <activity
+234-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:195:9-199:169
+235            android:name="com.alipay.sdk.app.H5AuthActivity"
+235-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:197:13-61
+236            android:configChanges="fontScale|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|locale"
+236-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:199:13-167
+237            android:exported="false"
+237-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:198:13-37
+238            android:theme="@android:style/Theme.NoTitleBar" />
+238-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:196:13-60
+239        <activity
+239-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:200:9-205:169
+240            android:name="com.alipay.sdk.app.PayResultActivity"
+240-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:202:13-64
+241            android:configChanges="fontScale|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|locale"
+241-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:205:13-167
+242            android:exported="true"
+242-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:203:13-36
+243            android:launchMode="singleInstance"
+243-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:204:13-48
+244            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+244-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:201:13-72
+245        <activity
+245-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:206:9-211:169
+246            android:name="com.alipay.sdk.app.AlipayResultActivity"
+246-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:208:13-67
+247            android:configChanges="fontScale|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|locale"
+247-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:211:13-167
+248            android:exported="true"
+248-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:209:13-36
+249            android:launchMode="singleTask"
+249-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:210:13-44
+250            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+250-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:207:13-72
+251        <activity
+251-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:212:9-217:69
+252            android:name="com.alipay.sdk.app.H5OpenAuthActivity"
+252-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:213:13-65
+253            android:configChanges="fontScale|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|locale"
+253-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:216:13-167
+254            android:exported="false"
+254-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:214:13-37
+255            android:screenOrientation="behind"
+255-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:215:13-47
+256            android:windowSoftInputMode="adjustResize|stateHidden" />
+256-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:217:13-67
+257        <activity
+257-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:218:9-222:169
+258            android:name="com.alipay.sdk.app.APayEntranceActivity"
+258-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:220:13-67
+259            android:configChanges="fontScale|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|locale"
+259-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:222:13-167
+260            android:exported="false"
+260-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:221:13-37
+261            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+261-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:219:13-72
+262
+263        <meta-data
+263-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:223:9-225:36
+264            android:name="com.google.android.play.billingclient.version"
+264-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:224:13-73
+265            android:value="7.0.0" />
+265-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:225:13-34
+266
+267        <activity
+267-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:226:9-230:98
+268            android:name="com.android.billingclient.api.ProxyBillingActivity"
+268-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:228:13-78
+269            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard"
+269-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:230:13-96
+270            android:exported="false"
+270-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:229:13-37
+271            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+271-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:227:13-72
+272        <activity
+272-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:231:9-235:98
+273            android:name="com.android.billingclient.api.ProxyBillingActivityV2"
+273-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:233:13-80
+274            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard"
+274-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:235:13-96
+275            android:exported="false"
+275-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:234:13-37
+276            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+276-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:232:13-72
+277
+278        <receiver
+278-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:236:9-243:20
+279            android:name="com.mob.pushsdk.plugins.fcm.FCMFireMessagingReceiver"
+279-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:237:13-80
+280            android:exported="true"
+280-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:239:13-36
+281            android:permission="com.google.android.c2dm.permission.SEND" >
+281-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:238:13-73
+282            <intent-filter>
+282-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:240:13-242:29
+283                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+283-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:241:17-80
+283-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:241:25-78
+284            </intent-filter>
+285        </receiver>
+286
+287        <activity
+287-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:244:9-248:48
+288            android:name="com.mob.pushsdk.impl.MobPushActivity"
+288-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:246:13-64
+289            android:excludeFromRecents="true"
+289-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:248:13-46
+290            android:exported="false"
+290-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:247:13-37
+291            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+291-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:245:13-72
+292
+293        <receiver
+293-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:249:9-256:20
+294            android:name="com.mob.pushsdk.impl.NotifyActionReceiver"
+294-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:250:13-69
+295            android:exported="false" >
+295-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:251:13-37
+296            <intent-filter>
+296-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:252:13-255:29
+297                <action android:name="com.mob.push.intent.NOTIFICATION_OPENED" />
+297-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:253:17-81
+297-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:253:25-79
+298                <action android:name="com.mob.push.intent.NOTIFICATION_DELETE" />
+298-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:254:17-81
+298-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:254:25-79
+299            </intent-filter>
+300        </receiver>
+301
+302        <service
+302-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:257:9-264:19
+303            android:name="com.mob.socketservice.MobService"
+303-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:258:13-60
+304            android:exported="true"
+304-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:259:13-36
+305            android:process=":mobservice" >
+305-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:260:13-42
+306            <intent-filter>
+306-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:261:13-263:29
+307                <action android:name="com.mob.intent.MOB_SERVICE" />
+307-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:262:17-68
+307-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:262:25-66
+308            </intent-filter>
+309        </service>
+310
+311        <meta-data
+311-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:265:9-267:36
+312            android:name="MIPUSH_SDK_VERSION_CODE"
+312-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:266:13-51
+313            android:value="60001" />
+313-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:267:13-34
+314        <meta-data
+314-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:268:9-270:38
+315            android:name="MIPUSH_SDK_VERSION_NAME"
+315-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:269:13-51
+316            android:value="6_0_1-C" />
+316-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:270:13-36
+317
+318        <service
+318-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:271:9-274:45
+319            android:name="com.xiaomi.push.service.XMPushService"
+319-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:272:13-65
+320            android:enabled="true"
+320-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:273:13-35
+321            android:process=":pushservice" />
+321-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:274:13-43
+322        <service
+322-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:275:9-280:45
+323            android:name="com.xiaomi.push.service.XMJobService"
+323-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:276:13-64
+324            android:enabled="true"
+324-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:278:13-35
+325            android:exported="false"
+325-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:279:13-37
+326            android:permission="android.permission.BIND_JOB_SERVICE"
+326-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:277:13-69
+327            android:process=":pushservice" />
+327-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:280:13-43
+328        <service
+328-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:281:9-285:38
+329            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+329-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:282:13-68
+330            android:enabled="true"
+330-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:284:13-35
+331            android:exported="true"
+331-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:285:13-36
+332            android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE" />
+332-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:283:13-75
+333        <service
+333-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:286:9-288:37
+334            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+334-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:287:13-70
+335            android:enabled="true" />
+335-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:288:13-35
+336
+337        <receiver
+337-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:289:9-296:20
+338            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+338-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:290:13-74
+339            android:exported="false"
+339-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:291:13-37
+340            android:process=":pushservice" >
+340-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:292:13-43
+341            <intent-filter>
+341-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:293:13-295:29
+342                <action android:name="com.xiaomi.push.PING_TIMER" />
+342-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:294:17-68
+342-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:294:25-66
+343            </intent-filter>
+344        </receiver>
+345
+346        <activity
+346-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:297:9-307:20
+347            android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity"
+347-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:299:13-77
+348            android:enabled="true"
+348-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:300:13-35
+349            android:excludeFromRecents="true"
+349-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:302:13-46
+350            android:exported="true"
+350-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:301:13-36
+351            android:launchMode="singleInstance"
+351-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:303:13-48
+352            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+352-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:298:13-72
+353            <meta-data
+353-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:304:13-306:45
+354                android:name="supportStyle"
+354-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:305:17-44
+355                android:value="scene|voip" />
+355-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:306:17-43
+356        </activity>
+357
+358        <service
+358-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:308:9-315:19
+359            android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService"
+359-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:309:13-92
+360            android:exported="true"
+360-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:311:13-36
+361            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE" >
+361-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:310:13-77
+362            <intent-filter>
+362-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:312:13-314:29
+363                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+363-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:313:17-84
+363-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:313:25-82
+364            </intent-filter>
+365        </service>
+366        <service
+366-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:316:9-324:19
+367            android:name="com.heytap.msp.push.service.DataMessageCallbackService"
+367-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:317:13-82
+368            android:exported="true"
+368-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:319:13-36
+369            android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE" >
+369-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:318:13-77
+370            <intent-filter>
+370-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:320:13-323:29
+371                <action android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+371-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:321:17-83
+371-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:321:25-81
+372                <action android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+372-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:322:17-81
+372-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:322:25-79
+373            </intent-filter>
+374        </service>
+375        <service
+375-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:325:9-328:38
+376            android:name="com.vivo.push.sdk.service.CommandClientService"
+376-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:326:13-74
+377            android:exported="true"
+377-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:328:13-36
+378            android:permission="com.push.permission.UPSTAGESERVICE" />
+378-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:327:13-68
+379        <service
+379-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:329:9-342:19
+380            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+380-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:330:13-91
+381            android:directBootAware="true"
+381-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:332:13-43
+382            android:exported="false" >
+382-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:331:13-37
+383            <meta-data
+383-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:333:13-335:84
+384                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+384-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:334:17-114
+385                android:value="com.google.firebase.components.ComponentRegistrar" />
+385-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:335:17-82
+386            <meta-data
+386-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:336:13-338:84
+387                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+387-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:337:17-124
+388                android:value="com.google.firebase.components.ComponentRegistrar" />
+388-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:338:17-82
+389            <meta-data
+389-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:339:13-341:84
+390                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+390-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:340:17-120
+391                android:value="com.google.firebase.components.ComponentRegistrar" />
+391-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:341:17-82
+392        </service>
+393
+394        <provider
+394-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:343:9-347:37
+395            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+395-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:344:13-78
+396            android:authorities="com.blink.academy.protake.mlkitinitprovider"
+396-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:346:13-78
+397            android:exported="false"
+397-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:345:13-37
+398            android:initOrder="99" />
+398-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:347:13-35
+399
+400        <activity
+400-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:348:9-351:39
+401            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+401-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:350:13-79
+402            android:exported="false"
+402-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:351:13-37
+403            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+403-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:349:13-72
+404
+405        <meta-data
+405-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:352:9-354:68
+406            android:name="com.google.android.gms.version"
+406-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:353:13-58
+407            android:value="@integer/google_play_services_version" />
+407-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:354:13-66
+408
+409        <provider
+409-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:355:9-365:20
+410            android:name="androidx.startup.InitializationProvider"
+410-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:356:13-67
+411            android:authorities="com.blink.academy.protake.androidx-startup"
+411-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:358:13-77
+412            android:exported="false" >
+412-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:357:13-37
+413            <meta-data
+413-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:359:13-361:51
+414                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+414-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:360:17-75
+415                android:value="androidx.startup" />
+415-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:361:17-49
+416            <meta-data
+416-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:362:13-364:51
+417                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+417-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:363:17-78
+418                android:value="androidx.startup" />
+418-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:364:17-49
+419        </provider>
+420
+421        <service
+421-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:366:9-372:19
+422            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+422-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:367:13-103
+423            android:exported="false" >
+423-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:368:13-37
+424            <meta-data
+424-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:369:13-371:38
+425                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+425-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:370:17-94
+426                android:value="cct" />
+426-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:371:17-36
+427        </service>
+428        <service
+428-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:373:9-376:39
+429            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+429-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:374:13-117
+430            android:exported="false"
+430-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:376:13-37
+431            android:permission="android.permission.BIND_JOB_SERVICE" />
+431-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:375:13-69
+432
+433        <receiver
+433-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:377:9-379:39
+434            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+434-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:378:13-132
+435            android:exported="false" />
+435-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:379:13-37
+436
+437        <meta-data
+437-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:380:9-382:50
+438            android:name="com.mob.push.xiaomi.appid"
+438-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:381:13-53
+439            android:value="2882303761518385686" />
+439-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:382:13-48
+440        <meta-data
+440-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:383:9-385:44
+441            android:name="com.mob.push.xiaomi.appkey"
+441-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:384:13-54
+442            android:value="5211838570686" />
+442-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:385:13-42
+443        <meta-data
+443-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:386:9-388:63
+444            android:name="com.mob.push.oppo.appkey"
+444-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:387:13-52
+445            android:value="a0bdd88793934ad1a5969732a8c2189a" />
+445-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:388:13-61
+446        <meta-data
+446-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:389:9-391:63
+447            android:name="com.mob.push.oppo.appsecret"
+447-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:390:13-55
+448            android:value="200bb482714f42c5b5c31f03ef4d42f6" />
+448-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:391:13-61
+449        <meta-data
+449-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:392:9-394:63
+450            android:name="com.vivo.push.api_key"
+450-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:393:13-49
+451            android:value="b062b75b2f9ba0b796c632e94faa3c28" />
+451-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:394:13-61
+452        <meta-data
+452-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:395:9-397:40
+453            android:name="com.vivo.push.app_id"
+453-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:396:13-48
+454            android:value="103897203" />
+454-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:397:13-38
+455        <meta-data
+455-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:398:9-400:44
+456            android:name="Mob-AppKey"
+456-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:399:13-38
+457            android:value="2e00251395c38" />
+457-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:400:13-42
+458        <meta-data
+458-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:401:9-403:63
+459            android:name="Mob-AppSecret"
+459-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:402:13-41
+460            android:value="fab6714015db38b934c0f3274965b5e5" />
+460-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:403:13-61
+461
+462        <activity
+462-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:404:9-409:69
+463            android:name="com.mob.tools.MobUIShell"
+463-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:406:13-52
+464            android:configChanges="screenSize|orientation|keyboardHidden"
+464-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:408:13-74
+465            android:exported="true"
+465-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:407:13-36
+466            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+466-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:405:13-72
+467            android:windowSoftInputMode="adjustResize|stateHidden" />
+467-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:409:13-67
+468
+469        <service
+469-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:410:9-417:19
+470            android:name="com.mob.pushsdk.MobService"
+470-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:411:13-54
+471            android:exported="true"
+471-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:412:13-36
+472            android:process=":mobservice" >
+472-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:413:13-42
+473            <intent-filter>
+473-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:261:13-263:29
+474                <action android:name="com.mob.intent.MOB_SERVICE" />
+474-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:262:17-68
+474-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:262:25-66
+475            </intent-filter>
+476        </service>
+477        <service
+477-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:418:9-421:39
+478            android:name="com.mob.pushsdk.impl.PushJobService"
+478-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:419:13-63
+479            android:exported="false"
+479-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:421:13-37
+480            android:permission="android.permission.BIND_JOB_SERVICE" />
+480-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:420:13-69
+481
+482        <receiver
+482-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:422:9-428:20
+483            android:name="com.mob.pushsdk.impl.MobPushReceiver"
+483-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:423:13-64
+484            android:exported="true" >
+484-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:424:13-36
+485            <intent-filter>
+485-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:425:13-427:29
+486                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+486-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:426:17-78
+486-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:426:25-76
+487            </intent-filter>
+488        </receiver>
+489        <receiver
+489-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:429:9-441:20
+490            android:name="com.mob.pushsdk.plugins.xiaomi.PushXiaoMiRevicer"
+490-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:430:13-76
+491            android:exported="true" >
+491-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:431:13-36
+492            <intent-filter>
+492-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:432:13-434:29
+493                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+493-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:433:17-75
+493-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:433:25-73
+494            </intent-filter>
+495            <intent-filter>
+495-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:435:13-437:29
+496                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+496-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:436:17-75
+496-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:436:25-73
+497            </intent-filter>
+498            <intent-filter>
+498-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:438:13-440:29
+499                <action android:name="com.xiaomi.mipush.ERROR" />
+499-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:439:17-65
+499-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:439:25-63
+500            </intent-filter>
+501        </receiver>
+502        <receiver
+502-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:442:9-448:20
+503            android:name="com.mob.pushsdk.plugins.vivo.MobVivo.MobPushVivoReceiver"
+503-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:443:13-84
+504            android:exported="false" >
+504-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:444:13-37
+505            <intent-filter>
+505-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:445:13-447:29
+506                <action android:name="com.vivo.pushclient.action.RECEIVE" />
+506-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:446:17-76
+506-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:446:25-74
+507            </intent-filter>
+508        </receiver>
+509
+510        <provider
+510-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:449:9-453:82
+511            android:name="com.mob.MobProvider"
+511-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:450:13-47
+512            android:authorities="com.blink.academy.protake.com.mob.MobProvider"
+512-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:453:13-80
+513            android:exported="false"
+513-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:451:13-37
+514            android:multiprocess="true" />
+514-->/Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/AndroidManifest.xml:452:13-40
+515    </application>
+516
+517</manifest>

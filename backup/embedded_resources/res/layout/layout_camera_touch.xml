@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:tag="layout/layout_camera_touch_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.blink.academy.film.widgets.exposure.TouchSquareView
+        android:id="@+id/capture_touch_focus"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerInParent="true"/>
+    <com.blink.academy.film.widgets.exposure.SlideBarView
+        android:id="@+id/capture_slidebar"
+        android:layout_width="50dp"
+        android:layout_height="240dp"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

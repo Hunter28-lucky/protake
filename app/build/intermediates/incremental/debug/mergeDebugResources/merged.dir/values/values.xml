@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="google_play_services_version">12451000</integer>
+    <string name="GLOBAL_APP_NAME">Protake</string>
+    <string name="app_name">Protake</string>
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        
+    </style>
+    <style name="Film.FullscreenAppCompatTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.App.Starting" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+</resources>

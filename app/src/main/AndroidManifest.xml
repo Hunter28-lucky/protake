@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:versionCode="130"
     android:versionName="3.0.17"
     android:compileSdkVersion="34"
     android:compileSdkVersionCodename="14"
-    package="com.blink.academy.protake"
     platformBuildVersionCode="34"
     platformBuildVersionName="14">
     <uses-sdk
         android:minSdkVersion="23"
-        android:targetSdkVersion="34"/>
+        android:targetSdkVersion="28"/>
     <queries>
         <package android:name="com.tencent.mm"/>
         <intent>
@@ -96,15 +96,9 @@
         android:allowBackup="false"
         android:largeHeap="true"
         android:supportsRtl="true"
-        android:extractNativeLibs="false"
         android:resizeableActivity="true"
-        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:maxAspectRatio="2.4"
-        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-        android:minAspectRatio="1"
-        android:requestLegacyExternalStorage="true"
-        android:preserveLegacyExternalStorage="true">
+        android:maxAspectRatio="2.4">
         <meta-data
             android:name="UMENG_APPKEY"
             android:value="5e4102ca19ce475332c98817"/>

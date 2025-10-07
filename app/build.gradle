@@ -1,16 +1,15 @@
 plugins {
     id 'com.android.application'
-
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    namespace 'com.blink.academy.protake'
+    compileSdk 28
 
     defaultConfig {
         applicationId 'com.blink.academy.protake'
-        minSdkVersion 23
-        targetSdkVersion 34
+        minSdk 23
+        targetSdk 28
         versionCode 130
         versionName "3.0.17"
 
@@ -29,15 +28,31 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    lintOptions {
+    lint {
         abortOnError false
     }
 
     buildFeatures {
         buildConfig = false
     }
+
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+
+    androidResources {
+        ignoreAssetsPattern "!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~"
+    }
+
+    aaptOptions {
+        ignoreAssetsPattern "!.svn:!.git:.*:!CVS:!thumbs.db:!picasa.ini:!*.scc:*~"
+        additionalParameters '--allow-reserved-package-id', '--auto-add-overlay'
+    }
 }
 
 dependencies {
-    // All billing dependencies removed. Project is now free of Google Play Billing libraries.
+    // No external dependencies - using only embedded libraries
+    // All required libraries appear to be embedded in the project
 }

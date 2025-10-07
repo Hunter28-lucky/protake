@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <META CHARSET="UTF-8">
+    <META NAME="data-spm" CONTENT="a1zaa">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <meta name="viewport"
+          content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <style>
+
+        html {
+            box-sizing: border-box;
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%
+        }
+
+        *, :after, :before {
+            box-sizing: inherit
+        }
+
+        article, aside, blockquote, body, button, code, dd, details, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, input, legend, li, menu, nav, ol, p, pre, section, td, textarea, th, ul {
+            margin: 0;
+            padding: 0
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        a:hover {
+            text-decoration: underline
+        }
+
+        body {
+            background: #fff;
+            overflow-x: hidden;
+            overflow-x: auto !important;
+            font: 12px/1.5 tahoma, arial, 'PingFang SC', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'Microsoft YaHei', sans-serif;
+            color: #333
+        }
+
+        .agr-content td, .agr-content th {
+            padding: 5px 10px;
+            border: 1px solid #ccc
+        }
+
+        a {
+            background-color: transparent
+        }
+
+        a, a:visited {
+            color: #3b8fd9
+        }
+
+        .agr-content table {
+            margin-bottom: 10px;
+            border-collapse: collapse;
+            display: table;
+            font-size: inherit;
+            border-spacing: 0
+        }
+
+        ol {
+            list-style: none;
+            list-style-type: none !important
+        }
+
+        .agreementpreview {
+            display: block;
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 20px;
+            margin: 20px auto
+        }
+
+        .agreementpreview > :first-child {
+            height: auto !important
+        }
+
+        .agreementpreview .kuma-icon-triangle-right {
+            position: absolute;
+            left: -16px;
+            top: -2px
+        }
+
+        .agreementpreview p {
+            margin: 5px 0
+        }
+
+        .agreementpreview .list-paddingleft-2 {
+            padding-left: 30px
+        }
+
+        .menu-tree-icon {
+            display: block;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAABiElEQVRIx92WsW7iQBCGP+9aoTErh5KHoUeioEUi5bXp7rp7gdwrXJeKDkSLxIO4t1wFI1Y+YL27KSJQlMR2OJk7KX+12tHMN6P5pd0gSZIb4BcwBXq0qw3wCHwPgYdOp3MfxzFSylYp1trbPM/vD4fDHwHcXQMCIKUkjmOAbwLoXQPyGgb0xNUIb/T1QGFVYDabYYxhOp2y2+1YLBaNxaIoYjweXwYKwxDvPQBBEDS60jlHGFaWI0iSxPf7/XcBay3e+3NyWZa1IO89QogPG0rTtHqitwl13X5G/98Mq9UKYwzD4ZCiKFiv18DLvj6Scw6lFIPB4DJQlmXnc1mWbDabxq6LoqiMVZpBa433nm63i3MOrXXjRFJKoih6F6s1w+sEIQRKqcaJ6lQJatPetaD5fM7xeGQymaC1ZrlcNoKUUoxGo8tAxhistecip3Od6qauNEObStP0Cz4T/xT09JlF/62ccwBPAnjcbreni1ZlrSXPc4DfIfBjv98HWZbdAbcts04fyJ/P8Gy1UjYdlOIAAAAASUVORK5CYII=) no-repeat 0 0;
+            width: 26px;
+            height: 26px;
+            position: fixed;
+            top: 210px;
+            right: 6%;
+            z-index: 10;
+            cursor: pointer
+        }
+
+        .arrow-top {
+            width: 10px;
+            height: 10px;
+            position: fixed;
+            right: 6.6%;
+            top: 233px;
+            z-index: 20;
+            display: none
+        }
+
+        .top-arrow1, .top-arrow2 {
+            width: 0;
+            height: 0;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 5;
+            border-top: 7px transparent dashed;
+            border-left: 8px transparent dashed;
+            border-right: 8px transparent dashed;
+            border-bottom: 8px #fff solid;
+            overflow: hidden
+        }
+
+        .top-arrow1 {
+            border-bottom: 10px #ebebeb solid
+        }
+
+        .top-arrow2 {
+            top: 1px;
+            border-bottom: 10px #fff solid
+        }
+
+        .menu-tree {
+            display: none;
+            position: fixed;
+            right: 5.5%;
+            top: 250px;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 1px 1px 5px 3px #ebebeb;
+            border-radius: 4px;
+            max-height: 310px;
+            overflow-y: scroll
+        }
+
+        .menu-tree .menu-tree-l {
+            float: left;
+            width: 20px;
+            border-left: solid 1px #d1d1d1
+        }
+
+        .menu-tree .menu-tree-l span {
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            border: solid 1px #d1d1d1;
+            margin-left: -5px
+        }
+
+        .menu-tree .menu-tree-l span:first-child {
+            margin-top: -10px
+        }
+
+        .menu-tree .menu-tree-l span:last-child {
+            margin-bottom: -9px
+        }
+
+        .menu-tree .menu-tree-l ul {
+            margin: 20px 0 10px -3.4px
+        }
+
+        .menu-tree .menu-tree-l ul li {
+            list-style: none;
+            margin-top: 10px
+        }
+
+        .menu-tree .menu-tree-l ul li i {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 6px;
+            border: solid 1px #d1d1d1;
+            background: #d1d1d1;
+            text-indent: -9999px
+        }
+
+        .menu-tree .menu-tree-l ul li .mt-l-active {
+            position: relative;
+            width: 12px;
+            height: 10px;
+            border: 0;
+            border-radius: 0;
+            background: #f90;
+            margin-left: -2px
+        }
+
+        .menu-tree .menu-tree-l ul li .mt-l-active:before {
+            position: absolute;
+            content: "";
+            right: -12px;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-top: .35rem solid transparent;
+            border-right: .3rem solid transparent;
+            border-bottom: .35rem solid transparent;
+            border-left: .6rem solid #f90
+        }
+
+        .menu-tree .menu-tree-r {
+            float: left
+        }
+
+        .menu-tree .menu-tree-r ul {
+            margin: 10px 0
+        }
+
+        .menu-tree .menu-tree-r ul li {
+            color: #666;
+            padding: 3px 10px 5px 10px;
+            overflow: hidden;
+            max-width: 225px;
+            height: 27px;
+            line-height: 20px;
+            margin-bottom: 2px;
+            text-overflow: ellipsis;
+            white-space: nowrap
+        }
+
+        .menu-tree .menu-tree-r ul li a {
+            color: #666;
+            text-decoration: none
+        }
+
+        .menu-tree .menu-tree-r ul li span {
+            margin-right: 5px !important;
+            display: none
+        }
+
+        .menu-tree .menu-tree-r ul li.mt-r-active a, .menu-tree .menu-tree-r ul li.mt-r-active span {
+            color: #f90
+        }
+
+        .menu-tree::-webkit-scrollbar {
+            width: 8px
+        }
+
+        .menu-tree::-webkit-scrollbar-button {
+            display: none
+        }
+
+        .menu-tree::-webkit-scrollbar-track-piece {
+            background: #ebebeb
+        }
+
+        .menu-tree::-webkit-scrollbar-thumb {
+            background: #f90
+        }
+
+        .template_tree {
+            z-index: 10
+        }
+
+        .hide {
+            display: none
+        }
+
+        .show {
+            display: block
+        }
+
+        .agreementview .kuma-dlg-content .custom_dash, .agreementview .kuma-dlg-content .custom_dot {
+            list-style: none
+        }
+
+        .agreementview .kuma-dlg-content .list-paddingleft-1 {
+            padding-left: 0
+        }
+
+        .agreementview .kuma-dlg-content .list-paddingleft-2 {
+            padding-left: 30px
+        }
+
+        .agreementview .kuma-dlg-content ul li {
+            list-style: inherit
+        }
+
+        @media only screen and (max-width: 999px) {
+            .arrow-top, .kuma-dlg-mask, .kuma-dlg-wrap, .menu-tree, .menu-tree-icon {
+                display: none
+            }
+
+            body {
+                overflow: visible !important
+            }
+
+            .agreementpreview {
+                width: auto;
+                word-break: break-all;
+                width: 100%;
+                overflow: hidden;
+                padding: 0 16px;
+                margin: 22px 0 32px 0
+            }
+
+            .agreementpreview p {
+                font-size: 16px;
+                color: rgba(0, 0, 0, .8);
+                word-break: break-all;
+                width: auto;
+                overflow: hidden;
+                padding: 0;
+                margin: 5px 0;
+                word-wrap: break-word
+            }
+
+            .agreementpreview p img {
+                max-width: 100% !important;
+                height: auto !important
+            }
+
+            .agreementpreview p span {
+                font-size: 16px;
+                overflow: hidden;
+                word-break: break-all;
+                text-align: inherit;
+                word-wrap: break-word
+            }
+
+            .agreementpreview p span em {
+                font-style: normal
+            }
+
+            .agreementpreview p em {
+                font-style: normal
+            }
+
+            .agreementpreview p strong {
+                padding: 0;
+                margin: 0;
+                text-align: inherit
+            }
+
+            .agreementpreview .table-wrapper {
+                overflow-x: auto
+            }
+
+            .agreementpreview .ztable, .agreementpreview table {
+                overflow-x: auto;
+                display: table;
+                position: relative;
+                table-layout: fixed
+            }
+
+            .agreementpreview .ztable tbody td, .agreementpreview table tbody td {
+                font-size: 16px;
+                color: rgba(0, 0, 0, .8)
+            }
+        }
+
+        .agreementview-yy .kuma-dlg-body {
+            overflow-y: auto;
+            max-height: 600px
+        }
+
+        .agreementview-yy .kuma-dlg-body::-webkit-scrollbar {
+            width: 4px;
+            background-color: #f5f5f5
+        }
+
+        .agreementview-yy .kuma-dlg-body::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+            border-radius: 4px;
+            background-color: #f5f5f5
+        }
+
+        .agreementview-yy .kuma-dlg-body::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+            background-color: rgba(134, 132, 132, .3)
+        }
+
+        .agreementview-yy .kuma-uxform-field p img {
+            max-width: 100%;
+            height: auto
+        }
+
+        .dialog .dialog-box, .dialog .dialog-mask {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1000
+        }
+
+        .dialog .dialog-mask {
+            background-color: rgba(0, 0, 0, .3)
+        }
+
+        .dialog .dialog-box {
+            z-index: 1005;
+            overflow: hidden
+        }
+
+        .dialog .dialog-content {
+            position: relative;
+            top: 100px;
+            width: 520px;
+            margin: 0 auto;
+            background-color: #fff;
+            z-index: 1005;
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, .2);
+            outline: 0;
+            border-radius: 3px;
+            overflow: hidden
+        }
+
+        .dialog .dialog-content .dialog-body {
+            padding: 15px 30px 15px 35px;
+            font-size: 12px;
+            line-height: 1.5;
+            max-height: 600px;
+            overflow-y: auto
+        }
+
+        .dialog .dialog-content .dialog-body p {
+            margin-left: 0 !important;
+            margin-right: 0 !important
+        }
+
+        .dialog .dialog-content .dialog-footer {
+            padding: 12px 0;
+            background-color: #f7f7f7;
+            text-align: center
+        }
+
+        .dialog .dialog-content .kuma-button {
+            padding: 0 15px;
+            height: 32px;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 3px;
+            font-size: 14px;
+            line-height: 30px;
+            box-sizing: border-box;
+            cursor: pointer
+        }
+
+        .dialog .dialog-content .kuma-button-primary {
+            background-color: #f37327;
+            border-color: #f37327;
+            color: #fff
+        }
+
+        .menu-tree-l {
+            color: #f37327
+        }
+
+        .menu-tree-l:after, .menu-tree-l:before {
+            content: " ";
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            border: solid 1px #d1d1d1;
+            margin-left: -5px
+        }
+
+        .menu-tree-l:before {
+            margin-top: -10px
+        }
+
+        .menu-tree-l:after {
+            margin-bottom: -9px
+        }
+
+
+    </style>
+
+    <style id="tablesort">    table.sortEnabled tr.firstRow th, table.sortEnabled tr.firstRow td {
+        padding-right: 20px;
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+    </style>
+    <style id="table">    .selectTdClass {
+        background-color: #edf5fa !important;
+    }
+
+    table.noBorderTable td, table.noBorderTable th, table.noBorderTable caption {
+        border: 1px dashed #ddd !important;
+    }
+
+    table {
+        margin-bottom: 10px;
+        border-collapse: collapse;
+        display: table;
+    }
+
+    td, th {
+        padding: 5px 10px;
+        border: 1px solid #CCC;
+    }
+
+    caption {
+        border: 1px dashed #DDD;
+        border-bottom: 0;
+        padding: 3px;
+        text-align: center;
+    }
+
+    th {
+        border-top: 1px solid #BBB;
+        background-color: #F7F7F7;
+    }
+
+    table tr.firstRow th {
+        border-top-width: 2px;
+    }
+
+    .ue-table-interlace-color-single {
+        background-color: #fcfcfc;
+    }
+
+    .ue-table-interlace-color-double {
+        background-color: #f7faff;
+    }
+
+    td p {
+        margin: 0;
+        padding: 0;
+    }
+    </style>
+    <style>    em {
+        font-style: italic;
+        font-weight: inherit;
+        font-style: oblique;
+    }
+
+    h1 {
+        display: block;
+        font-size: 2em;
+        -webkit-margin-before: 0.67em;
+        -webkit-margin-after: 0.67em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        font-weight: bold;
+    }
+
+    h2 {
+        display: block;
+        font-size: 1.5em;
+        -webkit-margin-before: 0.83em;
+        -webkit-margin-after: 0.83em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        font-weight: bold;
+    }
+
+    h3 {
+        display: block;
+        font-size: 1.17em;
+        -webkit-margin-before: 1em;
+        -webkit-margin-after: 1em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        font-weight: bold;
+    }
+
+    h4 {
+        display: block;
+        -webkit-margin-before: 1.33em;
+        -webkit-margin-after: 1.33em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    h5 {
+        display: block;
+        font-size: 0.83em;
+        -webkit-margin-before: 1.67em;
+        -webkit-margin-after: 1.67em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        font-weight: bold;
+        -webkit-transform-origin-x: 0;
+        -webkit-transform: scale(0.83);
+    }
+
+    h6 {
+        display: block;
+        font-size: 0.67em;
+        -webkit-margin-before: 2.33em;
+        -webkit-margin-after: 2.33em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        font-weight: bold;
+        -webkit-transform-origin-x: 0;
+        -webkit-transform: scale(0.67);
+    }
+
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+        color: #333;
+        text-decoration: none;
+    }
+
+    p span {
+        background: none !important;
+    }
+    </style>
+    <style>    li.list-dash {
+        list-style-type: none;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+    }
+
+    li.list-dot {
+        list-style-type: none;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+    }
+    </style>
+    <style>    li {
+        clear: both;
+    }
+
+    ol.custom_cn {
+        list-style-type: none;
+    }
+
+    ol.custom_cn li {
+        background-position: 0 3px;
+        background-repeat: no-repeat;
+    }
+
+    li.list-cn-paddingleft-1 {
+        padding-left: 25px;
+    }
+
+    li.list-cn-paddingleft-2 {
+        padding-left: 40px;
+    }
+
+    li.list-cn-paddingleft-3 {
+        padding-left: 55px;
+    }
+
+    ul.custom_dash li {
+        background-position: 0 3px;
+        background-repeat: no-repeat;
+        list-style-type: none;
+    }
+
+    ol.custom_dash, ul.custom_dash {
+        margin: 0;
+        padding: 0;
+    }
+    </style>
+    <style>    table[align="center"] {
+        margin: 0 auto;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    </style>
+    <title>Protake隐私政策</title></head>
+<body data-spm='8161610'>
+<div class="agreementpreview agr-content"><p class="title"
+                                             style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; text-align: center; font-weight: bold; white-space: normal;">
+    <span style="font-size: 12px;">隐私政策</span></p>
+    <p style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">更新日期：2021 年 07 月 12 日<br/>上线日期：2021 年 07 月 12 日</span></p>
+    <p class="subtitle"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 14px; font-weight: bold; white-space: normal;">
+        <span style="font-size: 12px;">一、我们如何收集和使用个人信息</span></p>
+    <p style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">在你使用「Protake」软件及服务的过程中，我们将根据合法、正当、必要的原则，收集信息。我们收集或请你提供的信息将用于：</span>
+    </p>
+    <p class="indent1"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 4px; text-indent: 2em; white-space: normal;">
+        <span style="font-size: 12px;">1. 保障产品的基础正常运行；</span></p>
+    <p class="indent1"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 4px; text-indent: 2em; white-space: normal;">
+        <span style="font-size: 12px;">2. 实现各项功能和服务；</span></p>
+    <p class="indent1"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 4px; text-indent: 2em; white-space: normal;">
+        <span style="font-size: 12px;">3. 优化、改善产品和服务；</span></p>
+    <p class="indent1"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 4px; text-indent: 2em; white-space: normal;">
+        <span style="font-size: 12px;">4. 保障产品、服务以及用户使用安全；</span></p>
+    <p class="indent1"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 4px; text-indent: 2em; white-space: normal;">
+        <span style="font-size: 12px;">5. 遵循法律法规与国家标准的规定。</span></p>
+    <p style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">我们会按照如下方式收集你在使用服务时主动提供的，以及你在使用功能或接受服务过程中产生的信息：</span>
+    </p>
+    <p class="indent1"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 4px; text-indent: 2em; white-space: normal;">
+        <span style="font-size: 12px;">1. 保障「Protake」及服务的正常运行</span></p>
+    <p class="indent2"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; text-indent: 3em; white-space: normal;">
+        <span style="font-size: 12px;">当您使用「Protake」及相关服务时：</span></p>
+    <p class="indent2"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; text-indent: 3em; white-space: normal;">
+        <span style="font-size: 12px;">（1）需要提供相机/摄像头权限，用于录制视频功能。请您知晓，即使您已同意开启相机/摄像头权限，我们也仅会在录制视频时使用相机/摄像头时获取信息。</span>
+    </p>
+    <p class="indent2"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; text-indent: 3em; white-space: normal;">
+        <span style="font-size: 12px;">（2）需要提供麦克风权限，用于录制视频功能；请您知晓，即使您已同意开启麦克风权限，我们也仅会在您录制视频时通过麦克风获取语音信息。</span>
+    </p>
+    <p class="indent2"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; text-indent: 3em; white-space: normal;">
+        <span style="font-size: 12px;">（3）需要提供相册权限，用于将视频保存到相册。</span></p>
+    <p class="indent2"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; text-indent: 3em; white-space: normal;">
+        <span style="font-size: 12px;">（4）需要提供位置信息权限，用于将位置信息写入到视频中。</span></p>
+    <p class="indent2"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; text-indent: 3em; white-space: normal;">
+        <span style="font-size: 12px;">（5）我们会收集您的硬件型号、操作系统版本号、软件版本号等信息。请您了解，这些信息是我们提供服务和保障产品正常运行所必须收集的基本信息。</span>
+    </p>
+    <p class="indent1"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 4px; text-indent: 2em; white-space: normal;">
+        <span style="font-size: 12px;">2. 登录「Protake」及相关服务</span></p>
+    <p class="indent2"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; text-indent: 3em; white-space: normal;">
+        <span style="font-size: 12px;">你可以选择在「Protake」中使用移动电话号码授权登录。此信息仅供实现登录相关的目的所使用，不会收集您的隐私信息。</span>
+    </p>
+    <p class="indent1"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 4px; text-indent: 2em; white-space: normal;">
+        <span style="font-size: 12px;">3. 保障产品、服务及用户使用安全</span></p>
+    <p class="indent2"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; text-indent: 3em; white-space: normal;">
+        <span style="font-size: 12px;">为帮助我们更好地了解「Protake」及相关服务的运行情况，以便确保运行与提供服务的安全，我们可能记录网络日志信息，以及使用软件及相关服务的频率、崩溃数据、总体安装、使用情况、性能数据等信息。</span>
+    </p>
+    <p class="subtitle"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 14px; font-weight: bold; white-space: normal;">
+        <span style="font-size: 12px;">二、对 cookie 和同类技术的使用</span></p>
+    <p style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">Cookie 和同类技术是互联网中的通用常用技术。当你使用「Protake」软件及相关服务时，我们可能会使用相关技术向你的设备发送一个或多个 cookie 或匿名标识符，以收集和存储你访问、使用本产品时的信息。我们可能会设置认证与保障安全性的 cookie 或匿名标识符，保障产品与服务的安全、高效运转，帮助我们改进服务效率，提升登录和响应速度。</span>
+    </p>
+    <p style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">为保障我们客户端的稳定运行、功能实现，使您能够享受和使用更多的服务及功能，我们的应用中会嵌入授权合作伙伴的SDK或其他类似的应用程序，</span><a
+            href="https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao202204221010_55249.html"
+            target="_blank" style="font-size: 12px; text-decoration: underline;"><span
+            style="font-size: 12px;">点击查看</span></a><span
+            style="font-size: 12px;">我们接入授权合作伙伴的SDK详情。</span></p>
+    <p class="subtitle"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 14px; font-weight: bold; white-space: normal;">
+        <span style="font-size: 12px;">三、我们如何存储个人信息</span></p>
+    <p class="subtitle2"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">（一）信息存储的地点</span></p>
+    <p style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">我们依照法律法规的规定，将在中华人民共和国境内运营过程中收集和产生的个人信息将存储于中华人民共和国境内。目前，我们不会将上述信息传输至境外，如果我们向境外传输，我们将会遵循法律法规的规定，征求你的明示同意。</span>
+    </p>
+    <p class="subtitle2"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">（二）存储期限</span></p>
+    <p style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">我们仅在为提供「Protake」及服务之目的所必需的期间内保留你的个人信息，例如，你的账号信息，在你未撤回、删除或未注销账号期间，我们会保留相关信息。超出必要期限后，我们将对你的个人信息进行删除或匿名化处理，但法律法规另有规定的除外。</span>
+    </p>
+    <p class="subtitle"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 14px; font-weight: bold; white-space: normal;">
+        <span style="font-size: 12px;">四、我们如何共享、转让、公开披露个人信息</span></p>
+    <p style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">我们不会向第三方共享、转让你的个人信息，除非经过你本人事先授权同意，或者共享、转让的个人信息是匿名化处理后的信息，且第三方无法根据此类信息重新识别自然人主体。</span>
+    </p>
+    <p style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">我们将审慎评估第三方使用共享信息的目的，对这些合作方的安全保障能力进行综合评估，并要求其遵循合作法律协议。我们会对合作方获取信息的软件工具开发包（SDK）、应用程序接口（API）进行严格的安全监测，以保护数据安全。</span>
+    </p>
+    <p class="indent1"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 4px; text-indent: 2em; white-space: normal;">
+        <span style="font-size: 12px;">1. 为实现相关功能或服务与第三方共享</span></p>
+    <p class="indent2"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; text-indent: 3em; white-space: normal;">
+        <span style="font-size: 12px;">当你使用第三方服务提供方与第三方支付公司合作提供的钱包支付功能服务，第三方支付公司需要收集你的姓名、银行卡类型及卡号、有效期及手机号码等信息。上述信息属于个人敏感信息，拒绝提供该等信息仅会使你无法使用该功能，但不影响你正常使用其他功能。</span>
+    </p>
+    <p class="indent1"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 4px; text-indent: 2em; white-space: normal;">
+        <span style="font-size: 12px;">2. 收购、兼并、重组时个人信息的转让</span></p>
+    <p class="indent2"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; text-indent: 3em; white-space: normal;">
+        <span style="font-size: 12px;">随着我们业务的持续发展，我们将有可能进行合并、收购、资产转让，你的个人信息有可能因此而被转移。在发生前述变更时，我们将按照法律法规及不低于本隐私政策所要求的安全标准继续保护或要求个人信息的继受方继续保护你的个人信息，否则我们将要求继受方重新征得你的授权同意。</span>
+    </p>
+    <p class="indent1"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 4px; text-indent: 2em; white-space: normal;">
+        <span style="font-size: 12px;">3. 共享、转让和公开披露个人信息时无需获得同意的法定情形</span></p>
+    <p class="indent2"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; text-indent: 3em; white-space: normal;">
+        <span style="font-size: 12px;">根据我国法律法规的规定，在以下情形中，我们共享、转让、公开披露你的个人信息无需事先取得你的同意：</span>
+    </p>
+    <p class="indent2"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; text-indent: 3em; white-space: normal;">
+        <span style="font-size: 12px;">（1）与我们履行法律法规规定的义务相关的；</span></p>
+    <p class="indent2"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; text-indent: 3em; white-space: normal;">
+        <span style="font-size: 12px;">（2）与国家安全、国防安全直接相关的；</span></p>
+    <p class="indent2"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; text-indent: 3em; white-space: normal;">
+        <span style="font-size: 12px;">（3）与公共安全、公共卫生、重大公共利益直接相关的；</span></p>
+    <p class="indent2"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; text-indent: 3em; white-space: normal;">
+        <span style="font-size: 12px;">（4）与刑事侦查、起诉、审判和判决执行等直接相关的；</span></p>
+    <p class="indent2"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; text-indent: 3em; white-space: normal;">
+        <span style="font-size: 12px;">（5）出于维护你或他人的生命、财产等重大合法权益但又很难得到你的授权同意的；</span>
+    </p>
+    <p class="indent2"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; text-indent: 3em; white-space: normal;">
+        <span style="font-size: 12px;">（6）你自行向社会公众公开的个人信息；</span></p>
+    <p class="indent2"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; text-indent: 3em; white-space: normal;">
+        <span style="font-size: 12px;">（7）从合法公开披露的信息中收集个人信息的，如合法的新闻报道、政府信息公开等渠道。</span>
+    </p>
+    <p class="subtitle"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 14px; font-weight: bold; white-space: normal;">
+        <span style="font-size: 12px;">五、我们如何保护个人信息安全</span></p>
+    <p class="subtitle2"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">（一）我们非常重视你个人信息的安全，将努力采取合理的安全措施（包括技术方面和管理方面）来保护你的个人信息，防止你提供的个人信息被不当使用或未经授权的情况下被访问、公开披露、使用、修改、损坏、丢失或泄漏。</span>
+    </p>
+    <p class="subtitle2"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">（二）我们会使用不低于行业同行的加密技术、匿名化处理等合理可行的手段保护你的个人信息，并使用安全保护机制防止你的个人信息遭到恶意攻击。</span>
+    </p>
+    <p class="subtitle2"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">（三）我们会建立专门的安全部门、安全管理制度、数据安全流程保障你的个人信息安全。我们采取严格的数据使用和访问制度，确保只有授权人员才可访问你的个人信息，并适时对数据和技术进行安全审计。</span>
+    </p>
+    <p class="subtitle2"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">（四）尽管已经采取了上述合理有效措施，并已经遵守了相关法律规定要求的标准，但请你理解，由于技术的限制以及可能存在的各种恶意手段，在互联网行业，即便竭尽所能加强安全措施，也不可能始终保证信息百分之百的安全，我们将尽力确保你提供给我们的个人信息的安全性。你知悉并理解，你接入我们的服务所用的系统和通讯网络，有可能因我们可控范围外的因素而出现问题。因此，我们强烈建议你采取积极措施保护个人信息的安全。</span>
+    </p>
+    <p class="subtitle2"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">（五）我们会制定应急处理预案，并在发生用户信息安全事件时立即启动应急预案，努力阻止该等安全事件的影响和后果扩大。一旦发生用户信息安全事件（泄露、丢失等）后，我们将按照法律法规的要求，及时向你告知：安全事件的基本情况和可能的影响、我们已经采取或将要采取的处置措施、你可自主防范和降低风险的建议、对你的补救措施等。我们将及时将事件相关情况以推送通知、邮件、信函、短信等形式告知你，难以逐一告知时，我们会采取合理、有效的方式发布公告。同时，我们还将按照相关监管部门要求，上报用户信息安全事件的处置情况。</span>
+    </p>
+    <p class="subtitle2"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">（六）我们谨此特别提醒你，本隐私政策提供的个人信息保护措施仅适用于「Protake」软件及相关服务。一旦你离开「Protake」及相关服务，浏览或使用其他网站、服务及内容资源，我们即没有能力及义务保护你在「Protake」软件及相关服务之外的软件、网站提交的任何个人信息，无论你登录、浏览或使用上述软件、网站是否基于「Protake」的链接或引导。</span>
+    </p>
+    <p class="subtitle"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 14px; font-weight: bold; white-space: normal;">
+        <span style="font-size: 12px;">六、你的权利</span></p>
+    <p class="subtitle2"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">（一）变更你的信息</span></p>
+    <p style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">你可以通过应用内的「修改手机号码」功能，直接变更你在「Protake」中的移动电话号码信息。在修改移动电话号码信息后，原先的手机号码将会失去相关服务。</span>
+    </p>
+    <p class="subtitle2"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">（二）注销你的信息</span></p>
+    <p style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">你可以通过发送邮件至 hello@dafork.com 注销你在「Protake」上的账号。在注销账号前，我们将在 15 个工作日内回复你并验证你的个人身份、安全状态、设备信息等，并在确认以上信息后进行回复与处理。您知悉并理解，注销账号的行为是不可逆的行为，一旦你注销账号，我们将停止为你提供相关服务。</span>
+    </p>
+    <p class="subtitle"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 14px; font-weight: bold; white-space: normal;">
+        <span style="font-size: 12px;">七、未成年人条款</span></p>
+    <p style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">若你是未满 18 周岁的未成年人，在使用「Protake」软件及相关服务前，应在你的父母或其他监护人监护、指导下共同阅读并同意本隐私政策。</span>
+    </p>
+    <p style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">我们根据国家相关法律法规的规定保护未成年人的个人信息，只会在法律允许、父母或其他监护人明确同意或保护未成年人所必要的情况下收集、使用、共享或披露未成年人的个人信息；如果我们发现在未事先获得可证实的父母同意的情况下收集了未成年人的个人信息，则会设法尽快删除相关信息。</span>
+    </p>
+    <p style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">若你是未成年人的监护人，当你对你所监护的未成年人的个人信息有相关疑问时，请通过本隐私政策公示的联系方式与我们联系。</span>
+    </p>
+    <p class="subtitle"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 14px; font-weight: bold; white-space: normal;">
+        <span style="font-size: 12px;">八、隐私政策的修订和通知</span></p>
+    <p style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">为了给你提供更好的服务，「Protake」软件及相关服务将不时更新与变化，我们会适时对本隐私政策进行修订，该等修订构成本隐私政策的一部分并具有等同于本隐私政策的效力。但未经你明确同意，我们不会削减你依据当前生效的本隐私政策所应享受的权利。</span>
+    </p>
+    <p class="subtitle"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 14px; font-weight: bold; white-space: normal;">
+        <span style="font-size: 12px;">九、如何与我们联系</span></p>
+    <p style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">如果你对本政策内容有任何疑问、意见或建议，你可以通过发送邮件至 hello@dafork.com 与我们联系，一般情况下，我们会在 15 个工作日内回复您。</span>
+    </p>
+    <p class="subtitle"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 14px; font-weight: bold; white-space: normal;">
+        <span style="font-size: 12px;">十、其他</span></p>
+    <p class="subtitle2"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">（一）本「隐私政策」中的标题仅为方便及阅读而设，并不影响本隐私政策中任何规定的含义或解释。</span>
+    </p>
+    <p class="subtitle2"
+       style="margin-top: 1em; font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; white-space: normal;">
+        <span style="font-size: 12px;">（二）本「隐私政策」相关词语释义：</span></p>
+    <p class="indent1"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 4px; text-indent: 2em; white-space: normal;">
+        <span style="font-size: 12px;">1. 「Protake」软件及相关服务是指北京灵光再现信息技术有限公司及其关联方通过合法拥有并运营的、标注名称为「Protake」的客户端应用程序向你提供的产品与服务。</span>
+    </p>
+    <p class="indent1"
+       style="font-family:微软雅黑,Microsoft YaHei,宋体,SimSun,黑体, SimHei; padding-top: 4px; text-indent: 2em; white-space: normal;">
+        <span style="font-size: 12px;">2. 关联方是指，指一方现在或将来控制、受控制或与其处于共同控制下的任何公司、机构以及上述公司或机构的法定代表人。「控制」是指直接或间接地拥有影响所提及公司管理的能力，无论是通过所有权、有投票权的股份、合同或其他被依法认定的方式。</span>
+    </p>
+    <p><br/></p></div>
+<div id="App"></div>
+<div style="display:none;" id="remindContentDiv"></div>
+<input type="hidden" id="needRemind" value="n"><input type="hidden" id="revisionNum"
+                                                      value="1.2"><input type="hidden"
+                                                                         id="agreementId"
+                                                                         value="12712">
+<script>(function () {
+    let contentElements = document.getElementsByClassName('agreementpreview');
+
+    if (contentElements) {
+        for (let i = 0; i < contentElements.length; i++) {
+            let pElements = contentElements[i].getElementsByTagName('p');
+            if (pElements) {
+                for (let j = 0; j < pElements.length; j++) {
+                    pElements[j].style.fontSize = '12px';
+                }
+            }
+        }
+    }
+
+    let titleElements = document.getElementsByClassName('title');
+
+    if (titleElements) {
+        for (let i = 0; i < titleElements.length; i++) {
+            titleElements[i].style.marginTop = '0px';
+        }
+    }
+
+
+    let indent1Elements = document.getElementsByClassName('indent1');
+
+    if (indent1Elements) {
+        for (let i = 0; i < indent1Elements.length; i++) {
+            indent1Elements[i].style.paddingTop = '0px';
+            indent1Elements[i].style.margin = '0px';
+        }
+    }
+
+    let indent2Elements = document.getElementsByClassName('indent2');
+
+    if (indent2Elements) {
+        for (let i = 0; i < indent2Elements.length; i++) {
+            indent2Elements[i].style.paddingTop = '0px';
+            indent2Elements[i].style.margin = '0px';
+        }
+    }
+
+    let indent3Elements = document.getElementsByClassName('indent3');
+    if (indent3Elements) {
+        for (let i = 0; i < indent3Elements.length; i++) {
+            indent3Elements[i].style.paddingTop = '0px';
+            indent3Elements[i].style.margin = '0px';
+        }
+    }
+})();
+</script>
+</body>
+</html>

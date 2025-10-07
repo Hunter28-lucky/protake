@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/text_choose_parent"
+    android:tag="layout/layout_looks_choose_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.blink.academy.film.widgets.StrokeTextView
+        android:gravity="center"
+        android:id="@+id/grids_un_choose_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:id="@+id/grids_choose_view"
+        android:background="@drawable/grids_black_line"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:id="@+id/point_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <com.blink.academy.film.widgets.StrokePointView
+            android:id="@+id/point_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.blink.academy.film.widgets.StrokePointView
+            android:id="@+id/point_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>

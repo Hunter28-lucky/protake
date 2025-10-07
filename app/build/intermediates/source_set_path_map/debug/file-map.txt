@@ -1,0 +1,7 @@
+com.blink.academy.protake.app-pngs-0 /Users/krishyogi/Desktop/JUT-officials/protake/app/build/generated/res/pngs/debug
+com.blink.academy.protake.app-resValues-1 /Users/krishyogi/Desktop/JUT-officials/protake/app/build/generated/res/resValues/debug
+com.blink.academy.protake.app-packageDebugResources-2 /Users/krishyogi/Desktop/JUT-officials/protake/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.blink.academy.protake.app-packageDebugResources-3 /Users/krishyogi/Desktop/JUT-officials/protake/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.blink.academy.protake.app-merged_res-4 /Users/krishyogi/Desktop/JUT-officials/protake/app/build/intermediates/merged_res/debug
+com.blink.academy.protake.app-debug-5 /Users/krishyogi/Desktop/JUT-officials/protake/app/src/debug/res
+com.blink.academy.protake.app-main-6 /Users/krishyogi/Desktop/JUT-officials/protake/app/src/main/res

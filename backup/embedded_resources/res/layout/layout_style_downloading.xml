@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/root"
+    android:tag="layout/layout_style_downloading_0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_25_download_yellow"
+        android:layout_centerVertical="true"/>
+    <com.blink.academy.film.widgets.StrokeTextView
+        android:id="@+id/tv_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/LOOKS_DOWNLOAD"
+        android:layout_toRightOf="@+id/iv_download"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>
